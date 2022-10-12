@@ -1,0 +1,13 @@
+<div class="container mb-5 mt-5" appTyping>
+
+  <app-box-information></app-box-information>
+
+  <app-show-text></app-show-text>
+
+  <div class="row mt-5">
+    <div class="col mb-3" *ngFor="let item of listAlphabet">
+      <app-button [label]="item" (click)="onClick(item)" [active]="activeButton(item)"></app-button>
+    </div>
+  </div>
+
+</div>
